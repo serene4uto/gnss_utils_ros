@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "nmea_logger = gnss_utils_ros.nmea_logger:main",
+            "gnss_eval = gnss_utils_ros.gnss_eval:main",
         ],
     },
 )
