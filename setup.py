@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "nmea_logger = gnss_utils_ros.nmea_logger:main",
-            "gnss_eval = gnss_utils_ros.gnss_eval:main",
+            "nmea_logger = src.nmea_logger:main",
+            "gnss_eval = src.gnss_eval:main",
         ],
     },
 )
