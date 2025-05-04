@@ -33,7 +33,7 @@ class GnssEval(Node):
 
         # ros2 params
         self.declare_parameter('log_enable', True)
-        self.declare_parameter('log_path', '.log')
+        self.declare_parameter('log_path', '.gnss_eval_log')
         self.declare_parameter('ground_truth.latitude', 0.0)
         self.declare_parameter('ground_truth.longitude', 0.0)
         self.declare_parameter('ground_truth.altitude', 0.0)
