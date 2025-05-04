@@ -88,8 +88,6 @@ class GnssEval(Node):
         return hpe_coords, hpe_dist
 
 
-
-
 def main(args=None):
     rclpy.init(args=args)
     gnss_eval = GnssEval()

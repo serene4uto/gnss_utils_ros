@@ -5,7 +5,8 @@ package_name = 'gnss_utils_ros'
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(exclude=['test']),
+    packages=[package_name],
+    package_dir={'': 'src'},
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -20,8 +21,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "nmea_logger = src.nmea_logger:main",
-            "gnss_eval = src.gnss_eval:main",
+            "gnss_eval = gnss_utils_ros.gnss_eval:main",
+            "nmea_logger = gnss_utils_ros.nmea_logger:main",
         ],
     },
 )
